@@ -1,0 +1,154 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1f3a;
+  color: white;
+  line-height: 1.5;
+}
+
+/* HEADER */
+.header {
+  background: #08162b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAV LINKS */
+.header nav a {
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* ACTIVE LINK (highlight page) */
+.header nav a.active {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* HERO (COMPACT) */
+.small-hero {
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+}
+
+.hero-content h3 {
+  font-size: 18px;
+}
+
+.highlight {
+  color: #ffcc00;
+}
+
+/* TEXT */
+p {
+  margin: 8px 0;
+  text-align: center;
+  color: #ddd;
+}
+
+/* BUTTON */
+button {
+  padding: 6px 15px;
+  background: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* SECTION */
+.section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+/* QUOTES */
+.quote-box {
+  background: rgba(255,255,255,0.1);
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 500px;
+  border-left: 3px solid #ffcc00;
+  border-radius: 6px;
+}
+
+/* 🔥 GALLERY (ONE BY ONE) */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 🔥 SAME SIZE IMAGES */
+.card img {
+  width: 100%;
+  height: 300px;       /* FIXED SAME SIZE */
+  object-fit: cover;   /* IMPORTANT */
+  display: block;
+}
+
+/* TEXT UNDER IMAGE */
+.card p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #08162b;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 22px;
+  }
+
+  .hero-content h3 {
+    font-size: 16px;
+  }
+
+  .gallery {
+    max-width: 100%;
+  }
+}
